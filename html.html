@@ -1,0 +1,209 @@
+
+<!-- 
+	PRACTICA html/css 
+	Realizada por: Sergio Calvo de Santos y David Salgueiro Alija
+	Tema: Realizacion de una pagina web con hoja de estilo CSS para la exposición de varios vehiculos de la marca Tesla
+-->
+<html>
+	<!-- Declaracion del nombre de la pestaña y de la hoja de estilos CSS -->
+	<head>
+		<meta charset="utf-8">
+		<title>TESLA</title>
+		<link rel="stylesheet" type="text/css" href="css.css">
+	</head>
+	
+	<!-- Etiqueta que encierra al cuerpo de la pagina -->
+	<body>
+		<!-- Cabecera principal -->
+		<header>
+			<h1>TESLA</h1>
+		</header>
+		<div id="icono">
+			<img src="IconoTesla.jpg" alt="Icono tesla"/>
+		</div>
+		<!-- Etiqueta Modelos -->
+		<div id="modelos">
+			<h2>Modelos</h2>
+			<!-- Lista Anidada -->
+			<ol>
+				<li>
+					<a href="https://www.tesla.com/es_es" target="_Blank">MODEL</a>
+					<ul>
+						<a href="https://www.tesla.com/es_es/model3" target="_Blank">MODEL 3</a>
+					</ul>
+					<ul>
+						<a href="https://www.tesla.com/es_es/modelx" target="_Blank">MODEL X</a>
+					</ul>
+					<ul>
+						<a href="https://www.tesla.com/es_es/models" target="_Blank">MODEL S</a>
+					</ul>
+					<ul>
+						<a href="https://www.tesla.com/es_es/modely" target="_Blank">MODEL Y</a>
+					</ul>
+				</li>
+				<li>
+					<a href="https://www.tesla.com/es_es/cybertruck" target="_Blank">CYBERTRUCK</a>
+				</li>
+				<li>
+					<a href="https://www.tesla.com/es_ES/roadster" target="_Blank">ROADSTER</a><br />
+				</li>
+			</ol>
+		</div>
+		
+		<!-- Etiqueta que muestra la información de la marca -->
+		<div id="informacion">
+			<h2>Información sobre TESLA:</h2>
+			<p>Tesla, Inc. ​ es una empresa estadounidense ubicada en Silicon Valley, California, y liderada por Elon Musk que diseña, fabrica y vende coches eléctricos, componentes para la propulsión de vehículos eléctricos y baterías domésticas a gran escala.​ Tiene su sede en Palo Alto, California.</p>
+			<p>Fue fundada en julio de 2003, por Elon Musk, JB Straubel y Martin Eberhard. Elon Musk ya había fundado varias empresas, era millonario y había tenido la idea de desarrollar baterías para el almacenamiento de energía renovable. Martin Eberhard quedó como CEO y JB Straubel quedó como CTO. El nombre de la empresa es un tributo al ingeniero eléctrico de origen serbio Nikola Tesla.</p>
+		</div>
+		
+		<!-- Etiquetas para mostrar el icono de twitter y instagram los cuales te llevan al instagram y twitter de Tesla -->
+		<div class="Redes_Sociales"> 
+			<a href="https://www.instagram.com/teslamotors/?hl=es">
+				<img class="imagen_redSocial" src="instagram.jpg" alt="Icono instagram"/>
+			</a>
+		</div>
+		
+		<div class="Redes_Sociales"> 
+			<a href="https://twitter.com/tesla?lang=es">
+				<img class="imagen_redSocial" src="Twitter.png" alt="Icono twitter"/>
+			</a>
+		</div>
+		
+		<!-- Etiqueta que muestra la tabla en la pagina -->
+		<div id="Tabla">
+			<table>
+			<tr>
+				<td id="cabecera_fila" colspan= "4">
+					<h1>Tabla de Precios Tesla</h1>
+				</td>
+			</tr>
+			<!--Todas las filas tienen el mismo diseño guardan el nombre, precio, imagen y video -->
+			<tr>
+				<td id="cabecera_fila">
+					<p>Modelos</p>
+				</td>
+				<td id="cabecera_fila">
+					<p>Precio</p>
+				</td>
+				<td id="cabecera_fila">
+					<p>Vehiculo</p>
+				</td>
+				<td id="cabecera_fila">
+					<p>Review</p>
+				</td>
+			</tr>
+			<tr>
+				<td id="contenido_fila">
+					<p>Model 3</p>
+				</td>
+				<td id="contenido_fila">
+					<p>49.980 €</p>
+				</td>
+				<td id="contenido_fila">
+					<img class="foto_vehiculo" src="Model3.jpg" alt="Imagen_MODEL3">
+				</td>
+				<td id="contenido_fila">
+					<iframe class="foto_vehiculo" src="https://www.youtube.com/embed/Z3HQjYMEJjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</td>
+			</tr>
+			<tr>
+				<td id="contenido_fila">
+					<p>Model X</p>
+				</td>
+				<td id="contenido_fila">
+					<p>85.980 €</p>
+				</td>
+				<td id="contenido_fila">
+					<img class="foto_vehiculo" src="ModelX.jpg" alt="Imagen_MODELX">
+				</td>
+				<td id="contenido_fila">
+					<iframe class="foto_vehiculo" src="https://www.youtube.com/embed/xNFjfkB1JNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</td>
+			</tr>
+			<tr>
+				<td id="contenido_fila">
+					<p>Model S</p>
+				</td>
+				<td id="contenido_fila">
+					<p>80.180 €</p>
+				</td>
+				<td id="contenido_fila">
+					<img class="foto_vehiculo" src="ModelS.jpg" alt="Imagen_MODELS">
+				</td>
+				<td id="contenido_fila">
+					<iframe class="foto_vehiculo" src="https://www.youtube.com/embed/xxUZ4xcL_ic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</td>
+			</tr>
+			<tr>
+				<td id="contenido_fila">
+					<p>Model Y</p>
+				</td>
+				<td id="contenido_fila">
+					<p>58.000 €</p>
+				</td>
+				<td id="contenido_fila">
+					<img class="foto_vehiculo" src="ModelY.jpg" alt="Imagen_MODELY">
+				</td>
+				<td id="contenido_fila">
+					<iframe class="foto_vehiculo" src="https://www.youtube.com/embed/Zq4BozCLGm8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</td>
+			</tr>
+			<tr>
+				<td id="contenido_fila">
+					<p>Cibertruck</p>
+				</td>
+				<td id="contenido_fila">
+					<p>36.000 €</p>
+				</td>
+				<td id="contenido_fila">
+					<img class="foto_vehiculo" src="Cibertruck.jpg" alt="Imagen_Cibertruck">
+				</td>
+				<td id="contenido_fila">
+					<iframe class="foto_vehiculo" src="https://www.youtube.com/embed/YXxXGQ7gZeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</td>
+			</tr>
+			<tr>
+				<td id="contenido_fila">
+					<p>Roadster</p>
+				</td>
+				<td id="contenido_fila">
+					<p>212.000 €</p>
+				</td>
+				<td id="contenido_fila">
+					<img class="foto_vehiculo" src="Roadster.jpg" alt="Imagen_Roadster">
+				</td>
+				<td id="contenido_fila">
+					<iframe class="foto_vehiculo" src="https://www.youtube.com/embed/e6yk6J3tZ6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</td>
+			</tr>
+			</table>
+		</div>
+		
+		<!-- Formulario para reservar el vehiculo -->
+		<div id="formulario">
+			<h2>Reserva tu vehiculo</h2>
+			<form action="input">
+				Nombre: <input type="text" name="nombre" /></br><br />
+				Apellidos: <input type="text" name="apellido" /></br><br />
+				Sexo: <input type="radio" name="sexo" value="hombre" /> Hombre
+						<input type="radio" name="sexo" value="mujer" /> Mujer<br /><br />
+				Coche seleccionado: <br /><input type="text" name="coche" /><br /><br />
+				<input type="submit" value="Enviar" />
+			</form>
+		</div>
+		
+	</body>
+	
+	<!-- Etiqueta footer para declarar el pie de pagina -->
+	<div id="pie_pagina">
+		<h4>Acerca de la página</h4>
+		<p>Copyright © 2020 | Sergio Calvo de Santos & David Salgueiro Alija</p>
+	</div>
+</html>
